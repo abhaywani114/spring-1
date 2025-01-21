@@ -1,4 +1,4 @@
-package com.databbase.book_management.domain;
+package com.databbase.book_management.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

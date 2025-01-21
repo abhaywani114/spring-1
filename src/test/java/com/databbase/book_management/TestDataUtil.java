@@ -1,8 +1,8 @@
 package com.databbase.book_management;
 
 
-import com.databbase.book_management.domain.Author;
-import com.databbase.book_management.domain.Book;
+import com.databbase.book_management.entities.Author;
+import com.databbase.book_management.entities.Book;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,6 @@ public final class TestDataUtil {
 
     authorList.add(
       Author.builder()
-        .id(1L)
         .name("Abrar Ajaz")
         .age(10)
       .build()
@@ -31,17 +30,36 @@ public final class TestDataUtil {
 
     authorList.add(
       Author.builder()
-        .id(2L)
-        .name("Sahil Ajaz")
-        .age(10)
+        .name("David Ajaz")
+        .age(25)
       .build()
     );
 
     authorList.add(
       Author.builder()
-        .id(3L)
+        .name("Sahil Ajaz")
+        .age(20)
+      .build()
+    );
+
+    authorList.add(
+      Author.builder()
         .name("Mohsin Ajaz")
-        .age(10)
+        .age(30)
+      .build()
+    );
+
+    authorList.add(
+      Author.builder()
+        .name("Sahil Ajaz")
+        .age(32)
+      .build()
+    );
+
+    authorList.add(
+      Author.builder()
+        .name("Sahil Ajaz")
+        .age(40)
       .build()
     );
 
@@ -55,7 +73,6 @@ public final class TestDataUtil {
       Book.builder()
       .id(1L)
       .title("The Great Ottomans")
-      .author_id(1L)
       .build()
     );
 
@@ -63,7 +80,6 @@ public final class TestDataUtil {
       Book.builder()
       .id(2L)
       .title("The salves of dark")
-      .author_id(1L)
       .build()
     );
 
@@ -75,7 +91,6 @@ public final class TestDataUtil {
     return  Book.builder()
       .id(10L)
       .title("The Great Ottomans")
-      .author_id(1L)
       .build();
   }
 }
